@@ -1,8 +1,10 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output: 
+title: 'Reproducible Research: Peer Assessment 1'
+output:
   html_document:
-    keep_md: true
+    keep_md: yes
+  pdf_document: default
+  word_document: default
 ---
 
 
@@ -188,7 +190,9 @@ d
 
 ```
 
-From this we can see that:
-* On the weekend on average more steps are taken mid morning that on the weekdays.  
-* We can also see that on weekdays on average steps are taken more consistently thoughout the day whereas on the weekend after the late morning spike in steps the number of steps drops.   
-* On both the weekend and weekdays very few to no steps are taken late at night and early in the morning. 
+#####Summary
+
+- On the weekend on average more steps are taken mid morning that on the weekdays.    
+- We can also see that on weekdays on average steps are taken more consistently thoughout the day whereas on the weekend after the late morning spike in steps the number of steps drops.     
+- On both the weekend and weekdays very few to no steps are taken late at night and early in the morning. 
+
