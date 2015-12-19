@@ -138,8 +138,8 @@ interval_with_max_steps$interval</code></pre>
 <pre><code>## [1] 835</code></pre>
 <p>The maximum number of steps on average for all 5 minute intervals is interval 835</p>
 </div>
-<div id="imputing-missing-values" class="section level2">
-<h2>Imputing missing values</h2>
+<div id="inputing-missing-values" class="section level2">
+<h2>Inputing missing values</h2>
 <pre class="r"><code>#get the number of records that have missing values in the steps column
 num_recs_na &lt;-count(filter(dat_tbl, is.na(steps)))
 num_recs_na$n</code></pre>
@@ -198,7 +198,7 @@ avg_steps_day_all &lt;- round(mean(steps_by_day$count))
 #get the median number of steps from the filled in dataset
 median_steps_day_all &lt;- median(steps_by_day$count)</code></pre>
 <ol start="4" style="list-style-type: decimal">
-<li>The mean number of steps after filling in the missing values is 1.058110^{4} which is higher than before we filled in the missing values. The median number of steps after filling in the missing values is 1.039510^{4} which is the same as before we filled in the missing values.</li>
+<li>The mean number of steps after filling in the missing values is 10581 which is higher than before we filled in the missing values. The median number of steps after filling in the missing values is 10395 which is the same as before we filled in the missing values.</li>
 </ol>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">

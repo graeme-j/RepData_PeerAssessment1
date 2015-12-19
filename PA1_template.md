@@ -74,7 +74,7 @@ median_steps_day
 ## [1] 10395
 ```
 
-The mean number of steps taken per day was 9354.23  
+The mean number of steps taken per day was 9354.23   
 The median number of steps taken per day was 10395
 
 
@@ -117,7 +117,7 @@ The maximum number of steps on average for all 5 minute intervals is interval 83
 
 
 
-## Imputing missing values
+## Inputing missing values
 
 
 ```r
@@ -129,7 +129,7 @@ num_recs_na$n
 ```
 ## [1] 2304
 ```
-1. The total number of rows with NAs is 2304  
+1. The total number of rows with NAs is 2304 
 
 2. To fill in the missing values we will take the mean value for the interval over all days
 
@@ -168,6 +168,7 @@ all_dat
 ## 17567: 0.9344262 2012-11-14     2355
 ## 17568: 0.9344262 2012-11-30     2355
 ```
+
 3. Now that the missing values have been filled in we will summarize the data and look at the histogram
 
 
@@ -194,8 +195,8 @@ avg_steps_day_all <- round(mean(steps_by_day$count))
 #get the median number of steps from the filled in dataset
 median_steps_day_all <- median(steps_by_day$count)
 ```
-4. The mean number of steps after filling in the missing values is 1.0581\times 10^{4} which is higher than before we filled in the missing values.
-The median number of steps after filling in the missing values is 1.0395\times 10^{4} which is the same as before we filled in the missing values.
+4. The mean number of steps after filling in the missing values is 10581 which is higher than before we filled in the missing values.
+The median number of steps after filling in the missing values is 10395 which is the same as before we filled in the missing values.
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
@@ -248,3 +249,4 @@ d
 - On the weekend on average more steps are taken mid morning that on the weekdays.    
 - We can also see that on weekdays on average steps are taken more consistently thoughout the day whereas on the weekend after the late morning spike in steps the number of steps drops.     
 - On both the weekend and weekdays very few to no steps are taken late at night and early in the morning. 
+

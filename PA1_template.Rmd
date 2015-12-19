@@ -87,7 +87,7 @@ The maximum number of steps on average for all 5 minute intervals is interval 83
 
 
 
-## Imputing missing values
+## Inputing missing values
 
 ```{r echo=TRUE}
 #get the number of records that have missing values in the steps column
@@ -120,6 +120,7 @@ all_dat <- rbind(complete_dat, incomplete_dat)
 all_dat 
 
 ```
+
 3. Now that the missing values have been filled in we will summarize the data and look at the histogram
 
 ```{r echo=TRUE}   
